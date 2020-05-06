@@ -1,5 +1,6 @@
 import React, { createContext, Component } from 'react';
 
+//create context component
 export const ThemeContext = createContext();
 
 class ThemeContextProvider extends Component {
@@ -15,6 +16,7 @@ class ThemeContextProvider extends Component {
 
     render() { 
         return (
+            //set data
             <ThemeContext.Provider value={{...this.state, toggleTheme: this.toggleTheme}}>
                 { this.props.children }
             </ThemeContext.Provider>

@@ -1,8 +1,7 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import BookList from './components/BookList';
+import Navbar2 from './components/Navbar2';
 import ThemeContextProvider from './contexts/ThemeContext';
-import ThemeToggle from './components/ThemeToggle';
+import ThemeToggle2 from './components/ThemeToggle2';
 import AuthContextProvider from './contexts/AuthContext';
 import BookList2 from './components/BookList2';
 
@@ -11,10 +10,9 @@ function App() {
     <div className="App">
       <ThemeContextProvider>
         <AuthContextProvider>
-          <Navbar />
-          <BookList />
+          <Navbar2 />
           <BookList2 />
-          <ThemeToggle />
+          <ThemeToggle2 />
         </AuthContextProvider>
       </ThemeContextProvider>
     </div>
